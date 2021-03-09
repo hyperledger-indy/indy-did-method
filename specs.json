@@ -1,0 +1,22 @@
+
+{
+  "specs": [
+    {
+      "title": "Indy DID Method Specification",
+      "spec_directory": "./spec",
+      "markdown_paths": [
+        "header.md",
+        "abstract.md",
+        "getting-started.md",
+        "features.md"
+      ],
+      "logo": "../logo.svg",
+      "logo_link": "https://github.com/csuwildcat/spec-up",
+      "source": {
+        "host": "github",
+        "account": "hyperledger",
+        "repo": "indy-did-method"
+      }
+    }
+  ]
+}
