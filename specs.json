@@ -4,6 +4,7 @@
     {
       "title": "Indy DID Method Specification",
       "spec_directory": "./spec",
+      "output_path": "./docs",
       "markdown_paths": [
         "0_header.md",
         "1_about.md",
