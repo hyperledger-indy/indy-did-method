@@ -7,9 +7,10 @@ Indy DID Method
   [https://github.com/hyperledger/indy-did-method](https://github.com/hyperledger/indy-did-method)
 
 **Editors:**
-::: todo enter editors
-Input the correct editors here.
-e.g. ~ [Stephen Curran](https://github.com/swcurran)
+
+[Stephen Curran](https://github.com/swcurran)
+Paul Bastian
+[Daniel Hardman](https://github.com/dhh1128)
 :::
 <!-- -->
 **Participate:**
