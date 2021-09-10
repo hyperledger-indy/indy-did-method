@@ -16,8 +16,7 @@ github:
     addBadge: true
 
 tasks:
-  - mame: Setup
-    init: npm install
+  - init: npm install
     command: npm run edit
      
   - name: Dev Server
