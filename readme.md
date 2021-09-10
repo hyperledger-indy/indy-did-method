@@ -15,7 +15,7 @@ The short version of the instructions for this repository is:
 
 - Install prerequisites: node and npm
 - Run `npm install` from the root of the repository
-- Run `npm run edit` from the root of the repository to render the document with live updates to the `docs\index.html`. You can see the updates as you make as you edit the markdown files. Open the rendered file in a browser and refresh to see the updates as you work.
+- Run `npm run edit` from the root of the repository to render the document with live updates to the `docs/index.html`. You can see the updates as you make as you edit the markdown files. Open the rendered file in a browser and refresh to see the updates as you work.
 - You can also run `npm run render` to just generate the specification file once.
 
 When you create a PR to update the specification, please **DO NOT** include `docs/index.html`. A GitHub Action on merge of PRs automagically
