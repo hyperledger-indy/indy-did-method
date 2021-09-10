@@ -17,7 +17,7 @@ github:
 
 tasks:
   - init: npm install
-    command: |
+    command: >
       npm run edit
       gp sync-done bundle
   - name: Dev Server
