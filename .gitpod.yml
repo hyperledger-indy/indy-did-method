@@ -16,9 +16,11 @@ github:
     addBadge: true
 
 tasks:
-  - init: npm install
+  - mame: Setup
+    init: npm install
     command: >
       npm run edit
-      npx browser-sync start --server "docs" --files "docs"
-
+     
+  - name: Dev Server
+    command:  npx browser-sync start --server "docs" --files "docs" 
      
