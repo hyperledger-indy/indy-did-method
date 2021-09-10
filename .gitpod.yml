@@ -17,7 +17,9 @@ github:
 
 tasks:
   - init: npm install
-    command: npm run edit
+    command: |
+      npm run edit
+      gp sync-done bundle
   - name: Dev Server
     init: gp sync-await bundle
     command: npx browser-sync start --server "docs" --files "docs"
