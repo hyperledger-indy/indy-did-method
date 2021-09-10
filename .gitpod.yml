@@ -17,6 +17,7 @@ github:
 
 tasks:
   - init: npm install
-    command: | 
-      npm run edit
-      npx browser-sync start --server "docs" --files "docs"
+    command: npm run edit
+  - name: Dev Server
+    command: npx browser-sync start --server "docs" --files "docs"
+     
