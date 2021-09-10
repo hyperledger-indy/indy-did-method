@@ -18,9 +18,7 @@ github:
 tasks:
   - mame: Setup
     init: npm install
-    command: >
-      npm run edit
+    command: npm run edit
      
   - name: Dev Server
-    command:  npx browser-sync start --server "docs" --files "docs" 
-     
+    command: npx browser-sync start --server "docs" --files "docs" 
