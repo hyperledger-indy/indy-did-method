@@ -28,12 +28,12 @@ Hint: One way to revert the updated `docs/index.html` before doing a commit, is 
 
 ### Editing the spec in the cloud with Gitpod
 
-An alternative way to contribute to the specification without any local installation is to use [Gitpod](https://www.gitpod.io/).
-- fork the repo 
+An alternative way to contribute to the specification, without any local installation, is to use [Gitpod](https://www.gitpod.io/).
+- Fork the repo. 
 - Open `https://gitpod.io/#https://github.com/YOUR_FORK_USER/indy-did-method`
-- Register with Gitpod using your GitHub Account and proivde `public_repo` permissions in order to commit to your fork from Gitpod.
-- You'll see a prepared VSCode workspace with two windows. To the left, you can edit the markdown files in the `/spec` folder. To the right, you'll seed the rendered spec.
-- You can create a new branch and commit and push your changes using a terminal or the source control plugin.
+- Register with Gitpod using your GitHub Account and provide `public_repo` permissions in order to commit to your fork from Gitpod.
+- You'll see a prepared VSCode workspace with two windows. To the left, you can edit the markdown files in the `/spec` folder. To the right, you'll see the rendered spec.
+- You can create a new branch and commit and push your changes using a terminal or the source control plugin to the left.
 - Then, you can create a pull request from Github.
 
 ## Community Links
