@@ -17,7 +17,13 @@ github:
 
 tasks:
   - init: npm install
-    command: npm run edit
+    command: |
+      gp open readme.md .
+      npm run edit
    
   - name: Dev Server
     command: npx browser-sync start --server "docs" --files "docs" 
+
+ports:
+  - port: 8000
+    onOpen: open-preview
