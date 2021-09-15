@@ -104,4 +104,10 @@ dist
 .tern-port
 
 # spec-up generated output
-spec/index.html
+docs/
+
+# Netbeans
+nbproject/
+
+# VSCode
+.vscode/

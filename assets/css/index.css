@@ -612,7 +612,7 @@ pre[class*="language-"] {
 }
 
   #logo {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     display: flex;
     align-items: center;
     height: 100%;
@@ -620,7 +620,7 @@ pre[class*="language-"] {
   }
 
   #logo img {
-    height: 100%;
+    height: 150%;
   }
 
 

@@ -23,7 +23,7 @@
         "14_privacy_considerations.md",
         "15_future_directions.md"
       ],
-      "logo": "../hyperledger-logo.png",
+      "logo": "../hyperledger-logo.svg",
       "logo_link": "https://github.com/hyperledger/indy-did-method",
       "source": {
         "host": "github",
