@@ -8,7 +8,7 @@ Creation of a `did:indy` DID is performed by an authorized entity executing a `N
 
 - A `did:indy` DID MUST be self-certifying by having the namespace identifier component of the DID (last element) derived from the initial public key of the DID, as follows:
 
-    - For an Ed25519 key: Convert into Base58char the first 16 bytes of the 256 bit public key (verkey).
+  - For an Ed25519 key: Convert into Base58char the first 16 bytes of the 256 bit public key (verkey).
 
 - The Indy ledger MUST verify the relationship between the namespace identifier component of the DID and the initial public key (verkey). If the relationship between the data elements fails verification, the transaction MUST be rejected and an error returned to the client.
 
@@ -76,6 +76,7 @@ The base DIDDoc template is static text that forms a JSON structure. To transfor
 Assuming values `sovrin` for the `namespace`, `123456` for `dest` and `789abc` for the `verkey` the resulting JSON DIDDoc would be:
 
 ::: example Base DIDDoc sovrin example
+
 ```json
 {
   "id": "did:indy:sovrin:123456",
@@ -98,6 +99,7 @@ Assuming values `sovrin` for the `namespace`, `123456` for `dest` and `789abc` f
 An example of a [[ref: NYM]]'s extended DIDDoc handling is provided below. In the example below, the `diddocContent` item adds a DIDcomm Messaging service endpoint to the resolved DIDDoc. Note that in the example, an `@context` item is included in the `diddocContent`, which causes the result DIDDoc to be a JSON-LD document, rather than plain JSON.
 
 ::: example Extended DIDDoc Item example
+
 ```json
 "diddocContent" : {
     "@context" : [ 
@@ -115,11 +117,13 @@ An example of a [[ref: NYM]]'s extended DIDDoc handling is provided below. In th
     ]
   }
 ```
+
 :::
 
 Applying the DIDDoc assembly rules to the example above produces the following assembled, valid JSON-LD DIDDoc:
 
 ::: example assembled Extended JSON-LD DIDDoc Item  example
+
 ```json
 {
   "@context": [
@@ -148,6 +152,7 @@ Applying the DIDDoc assembly rules to the example above produces the following a
   ]
 }
 ```
+
 :::
 
 #### Key Agreement

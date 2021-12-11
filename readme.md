@@ -26,9 +26,10 @@ published from there. If there is a way to .gitignore the `index.html` in the ma
 
 Hint: One way to revert the updated `docs/index.html` before doing a commit, is to run: `git checkout -- docs/index.html`
 
-### Editing the spec in the cloud with Gitpod
+## Editing the spec in the cloud with Gitpod
 
 An alternative way to contribute to the specification, without any local installation, is to use [Gitpod](https://www.gitpod.io/).
+
 - Fork the repo. 
 - Open `https://gitpod.io/#https://github.com/YOUR_FORK_USER/indy-did-method`
 - Register with Gitpod using your GitHub Account and provide `public_repo` permissions in order to commit to your fork from Gitpod.

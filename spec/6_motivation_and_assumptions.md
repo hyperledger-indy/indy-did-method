@@ -2,7 +2,7 @@
 
 ### Assumption: Number of Indy Instances
 
-We are anticipating that there will be at most on the order of "low hundreds" of Indy network instances, with the potential for several (usually 3) subnamespaces per network instance for production, test (staging), and development deployments. This assumption is based on the likelihood of their being some (likely small) number of global Indy instances, and some number of national Indy instances. Assuming at most one per country, we would have around 200-300 total, leading to the anticipated maximum of "low hundreds" of Indy network instances.
+We are anticipating that there will be at most on the order of "low hundreds" of Indy network instances, with the potential for several (usually 3) sub-namespaces per network instance for production, test (staging), and development deployments. This assumption is based on the likelihood of their being some (likely small) number of global Indy instances, and some number of national Indy instances. Assuming at most one per country, we would have around 200-300 total, leading to the anticipated maximum of "low hundreds" of Indy network instances.
 
 ### Including a Network-specific Identifier
 

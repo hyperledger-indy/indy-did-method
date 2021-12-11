@@ -18,4 +18,4 @@ Some consideration was given to the idea of allowing network discovery by regist
 
 ### Other Signature Schemes
 
-Indy implicitly uses the ED25519 Signature scheme for the `verkey`. We recommend that the [[ref: NYM]]s be evolved to explcitly state the signature scheme so that other signature key schemes can be used on Indy networks.
+Indy implicitly uses the ED25519 Signature scheme for the `verkey`. We recommend that the [[ref: NYM]]s be evolved to explicitly state the signature scheme so that other signature key schemes can be used on Indy networks.

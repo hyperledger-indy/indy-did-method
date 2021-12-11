@@ -1,6 +1,6 @@
 ## Finding Indy Ledgers
 
-To connect and read or write from a Hyperledger Indy network instance, a client must have the configuration file (in Indy, called the "gensis" file) for the network. Given a `did:indy` DID (e.g. `did:indy:<namespace>:<namespace identifier>`), the Indy network instance on which the DID resides is known. However, there remains a challenge for the entity interested in resolving the DID&mdash;finding the genesis file for that network instance. The following documents two mechanisms resolvers can use to access required genesis files.
+To connect and read or write from a Hyperledger Indy network instance, a client must have the configuration file (in Indy, called the "genesis" file) for the network. Given a `did:indy` DID (e.g. `did:indy:<namespace>:<namespace identifier>`), the Indy network instance on which the DID resides is known. However, there remains a challenge for the entity interested in resolving the DID&mdash;finding the genesis file for that network instance. The following documents two mechanisms resolvers can use to access required genesis files.
 
 ### Static
 
@@ -38,7 +38,7 @@ The security policy of the client (and perhaps the user of the client) might giv
 
 Each contributing network instance operator maintains copies of their genesis files and supporting documents in the GitHub repo by submitting Pull Requests (PRs) to the repo. The community selected repo maintainers are expected to merge PRs with limited review based on their knowledge of the network operators. Their focus is not to provide editorial oversight but only to:
 
-- prevent updates to a network's gensis file by other than known operator of the network, and
+- prevent updates to a network's genesis file by other than known operator of the network, and
 - prevent badly formatted genesis files from being added to the repository.
 
 The maintainers are authorized to submit PRs to remove "bad actor" network folders based on notifications from the community and followup verification.
