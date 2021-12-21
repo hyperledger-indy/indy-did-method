@@ -1,6 +1,6 @@
 ## Indy DID Method Identifiers
 
-The did:indy Method DID identifier has four components that are concatonated to make a DID specification conformant identifier. The components are:
+The did:indy Method DID identifier has four components that are concatenated to make a DID specification conformant identifier. The components are:
 
 - **DID**: the hardcoded string `did:` to indicate the identifier is a DID
 - **DID Indy Method**: the hardcoded string `indy:` indicating that the identifier uses this DID Method specification.
