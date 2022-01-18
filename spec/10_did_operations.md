@@ -9,11 +9,9 @@ Creation of a `did:indy` DID is performed by an authorized entity executing a `N
 - A `did:indy` DID MUST be self-certifying by having the namespace identifier component of the DID (last element) derived from the initial public key of the DID, as follows:
 
   - The SHA-256 hash of the first 16 bits of the public key
-  - Prior to `did:indy`, the unenforced convention in the Indy SDK was to use the following to demonstrate the relationship between the DID and its initial verkey: `For an Ed25519 key: Convert into Base58char the first 16 bytes of the 256 bit public key (verkey).` If the `did:indy` approach to verifying the relationship between the DID and its initial verkey faile, a client resolving a DID MAY verify the relationship  using the old Indy SDK convention.
+  - Prior to `did:indy`, the unenforced convention in the Indy SDK was to use the following to demonstrate the relationship between the DID and its initial verkey: `For an Ed25519 key: Convert into Base58char the first 16 bytes of the 256 bit public key (verkey).` If the `did:indy` approach to verifying the relationship between the DID and its initial verkey fail, a client resolving a DID MAY verify the relationship  using the old Indy SDK convention.
 
-::: todo Is there a way to indicate when a ledger begins to use a version of Indy Node that enforces `did:indy` rules when writing transactions?
-:::
-
+:construction: Is there a way to indicate when a ledger begins to use a version of Indy Node that enforces `did:indy` rules when writing transactions?
 
 - The Indy ledger MUST verify the relationship between the namespace identifier component of the DID and the initial public key (verkey). If the relationship between the data elements fails verification, the transaction MUST be rejected and an error returned to the client.
 
