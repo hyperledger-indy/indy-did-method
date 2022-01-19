@@ -70,14 +70,15 @@ DID URL: [did:indy:sovrin:5nDyJVP1NrcPAttP3xwMB9/REV_REG_ENTRY/npdb/TAG1](https:
 The DID URL resolution response depends on the query parameters used, as follows:
 
 - `?versionId=<timestamp>`
-    - Response is the same as the Indy Node [GET_REVOC_REG Txn](https://hyperledger-indy.readthedocs.io/projects/node/en/latest/requests.html#get-revoc-reg)
-    - If the parameter is left off the current time is used for the timestamp.
+  - Response is the same as the Indy Node [GET_REVOC_REG Txn](https://hyperledger-indy.readthedocs.io/projects/node/en/latest/requests.html#get-revoc-reg)
+  - If the parameter is left off the current time is used for the timestamp.
 - `?from=<timestamp>&to=<timestamp>`
-    - Response is the same as the Indy Node [GET_REVOC_REG_DELTA Txn](https://hyperledger-indy.readthedocs.io/projects/node/en/latest/requests.html#get-revoc-reg-delta)
-    - As noted in the transaction documentation, the from parameter is optional.
-    - If the `to` parameter is left off the current time is used for the `to` timestamp.
+  - Response is the same as the Indy Node [GET_REVOC_REG_DELTA Txn](https://hyperledger-indy.readthedocs.io/projects/node/en/latest/requests.html#get-revoc-reg-delta)
+  - As noted in the transaction documentation, the from parameter is optional.
+  - If the `to` parameter is left off the current time is used for the `to` timestamp.
 
 Existing Identifier: `5:5nDyJVP1NrcPAttP3xwMB9:4:5nDyJVP1NrcPAttP3xwMB9:3:CL:56495:npdb:CL_ACCUM:TAG1`
+
 - `5` is the enumerated object type
 - The remainder of the identifier is the identifier for the applicable Revocation Registry
 

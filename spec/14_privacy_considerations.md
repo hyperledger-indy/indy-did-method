@@ -1,5 +1,4 @@
 
-
 ## Privacy Considerations
 
 Given that Indy is a publicly readable, immutable ledger, no personally identifiable information, including DIDs where a person is the DID Subject, should be placed on the network. As this DID method does not offer yet any means to delete or deactivate personal information (e.g. in the sense of GDPR), it is important to enforce these rules by organisational means, for example through an Endorser Transaction Agreement or other contractual agreements.
