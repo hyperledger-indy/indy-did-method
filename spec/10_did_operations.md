@@ -43,6 +43,7 @@ The following are the steps for assembling a DIDDoc from its inputs.
 2. The Indy network instance `namespace`, the [[ref: NYM]] `dest` and the [[ref: NYM]] `verkey` items are merged into a text template to produce a base DIDDoc.
     1. See the template in the [Base DIDDoc Template](#base-diddoc-template) section of this document.
     2. If there is no `diddocContent` item in the [[ref: NYM]], assembly is complete; return the DIDDoc and a success status.
+       1. For backwards compatibility to the `did:sov` DID Method, if there is no `diddocContent` iten, a client DID resolver **MAY** attempt to read the `endpoint` ATTRIB object related to the DID and add it to the DIDDoc. See the [Endpoint ATTRIB section (below)](#the-%22endpoint%22-attrib) for more details.
 3. If the `diddocContent` item is included in the [[ref: NYM]] is verified and merged into the DIDDoc.
     1. The `diddocContent` item MUST NOT have an `id` item. If found, exit the assembly process, returning an error.
     2. If the `diddocContent` item contains a `@context` item, the DIDDoc is assumed to be JSON-LD, and the `@context` element MUST include the current DID Core JSON-LD context. If it does not, exit the assmebly process and return an error.
@@ -164,7 +165,7 @@ By default there is no key agreement section in an assembled DIDDoc. If the DID 
 
 Prior to the definition of this DID Method, a convention on Indy ledgers to associate an endpoint to a [[ref: NYM]] involved adding an [[ref: ATTRIB]] ledger object with a `raw` value of contain the JSON for a name-value pair of `endpoint` and a URL endpoint, often an IP address.
 
-We recommend that anyone that is using that format prior to the availability of the `did:indy` DID Method update their [[ref: NYM]] on the ledger to use the `diddocContent` item as soon as possible.
+We strongly encourage anyone using the "ATTRIB endpoint" convention to update their [[ref: NYM]] on the ledger to use the `diddocContent` item as soon as possible, as the [[ref: ATTRIB]] is deprecated as of the availability of the `did:indy` DID Method.
 
 If a client retrieves a [[ref: NYM]] that has a `diddocContent` data element, the client should assume that the DID Controller has made the [[ref: ATTRIB]] (if any) obsolete and the client SHOULD NOT retrieve the [[ref: ATTRIB]] associated with the DID.
 
