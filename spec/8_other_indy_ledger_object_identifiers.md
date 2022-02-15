@@ -6,12 +6,13 @@ Indy ledgers may hold object types other than DIDs, and each of the other object
 
 The structure of identifiers for all non-DID Indy ledger objects is the following DID URL structure, based on the DID of the object's DID controller:
 
-- `<did>/anoncreds/v1/<object-type>/<object-type-identifier>`
+- `<did>/<object-family>/<object-family-version>/<object-type>/<object-type-identifier>`
 
 The components of the DID URL are:
 
 - `<did>` the `did:indy` DID of the object-owning controller
-- `/anoncreds/v1/` family and version of object
+- `<object-family>` family of the object
+- `<object-family-version>` version of the object family
 - `<object-type>` one of [[ref: SCHEMA]], [[ref: CLAIM_DEF]], [[ref: REV_REG_DEF]], [[ref: REV_REG_ENTRY]], [[ref: ATTRIB]]
 - `<object-type-identifier>` an object type unique identifier defined by Indy by object type.
 
@@ -21,6 +22,7 @@ The following sections cover each ledger object type, providing:
 
 - an example DID URL identifier,
 - a link to an example object residing on the Sovrin MainNet Indy ledger (courtesy of [indyscan.io](https://indyscan.io)),
+- the appropriate object family and version,
 - the format of the response when resolving the DID URL,
 - the pre-`did:indy` identifier for each object, and
 - notes about the elements of the pre-`did:indy` identifier.
@@ -28,6 +30,10 @@ The following sections cover each ledger object type, providing:
 #### Schema
 
 DID URL: [`did:indy:sovrin:F72i3Y3Q4i466efjYJYCHM/anoncreds/v1/SCHEMA/npdb/4.3.4`](https://indyscan.io/tx/SOVRIN_MAINNET/domain/56495)
+
+Object Family: `anoncreds`
+
+Family Version: `v1`
 
 Response: Same as the Indy Node [GET_SCHEMA Txn](https://hyperledger-indy.readthedocs.io/projects/node/en/latest/requests.html#get-schema)
 
@@ -40,6 +46,10 @@ Existing identifier: `F72i3Y3Q4i466efjYJYCHM:2:npdb:4.3.4`
 #### Claim Def
 
 DID URL: [`did:indy:sovrin:5nDyJVP1NrcPAttP3xwMB9/anoncreds/v1/CLAIM_DEF/npdb`](https://indyscan.io/tx/SOVRIN_MAINNET/domain/56496)
+
+Object Family: `anoncreds`
+
+Family Version: `v1`
 
 Response: Same as the Indy Node [GET_CLAIM_DEF Txn](https://hyperledger-indy.readthedocs.io/projects/node/en/latest/requests.html#get-claim-def)
 
@@ -56,6 +66,10 @@ Note that the DID URL format adds a constraint on the client-defined claim def n
 
 DID URL: [`did:indy:sovrin:5nDyJVP1NrcPAttP3xwMB9/anoncreds/v1/REV_REG_DEF/npdb/TAG1`](https://indyscan.io/tx/SOVRIN_MAINNET/domain/56497)
 
+Object Family: `anoncreds`
+
+Family Version: `v1`
+
 Response: Same as the Indy Node [GET_REVOC_REG_DEF Txn](https://hyperledger-indy.readthedocs.io/projects/node/en/latest/requests.html#get-revoc-reg-def)
 
 Existing Identifier: `5nDyJVP1NrcPAttP3xwMB9:4:5nDyJVP1NrcPAttP3xwMB9:3:CL:56495:npdb:CL_ACCUM:TAG1`
@@ -67,6 +81,10 @@ Existing Identifier: `5nDyJVP1NrcPAttP3xwMB9:4:5nDyJVP1NrcPAttP3xwMB9:3:CL:56495
 #### Revocation Registry Entry
 
 DID URL: [`did:indy:sovrin:5nDyJVP1NrcPAttP3xwMB9/anoncreds/v1/REV_REG_ENTRY/npdb/TAG1`](https://indyscan.io/tx/SOVRIN_MAINNET/domain/58567)
+
+Object Family: `anoncreds`
+
+Family Version: `v1`
 
 The DID URL resolution response depends on the query parameters used, as follows:
 
