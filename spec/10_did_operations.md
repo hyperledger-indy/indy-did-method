@@ -165,7 +165,7 @@ By default there is no key agreement section in an assembled DIDDoc. If the DID 
 
 Prior to the definition of this DID Method, a convention on Indy ledgers to associate an endpoint to a [[ref: NYM]] involved adding an [[ref: ATTRIB]] ledger object with a `raw` value of contain the JSON for a name-value pair of `endpoint` and a URL endpoint, often an IP address.
 
-We strongly encourage anyone using the "ATTRIB endpoint" convention to update their [[ref: NYM]] on the ledger to use the `diddocContent` item as soon as possible, as the [[ref: ATTRIB]] is deprecated as of the availability of the `did:indy` DID Method.
+We strongly encourage anyone using the "ATTRIB endpoint" convention to update their [[ref: NYM]] on the ledger to use the `diddocContent` item as soon as possible, as the [[ref: ATTRIB]] is deprecated with the introduction of the `did:indy` DID Method.
 
 If a client retrieves a [[ref: NYM]] that has a `diddocContent` data element, the client should assume that the DID Controller has made the [[ref: ATTRIB]] (if any) obsolete and the client SHOULD NOT retrieve the [[ref: ATTRIB]] associated with the DID.
 
