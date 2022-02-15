@@ -197,7 +197,7 @@ The following validation steps are performed prior to the update being written t
 
 - Based on the configured authorization rules of the specific Indy ledger, the transaction may have to be signed by others, such as a Trustee or Endorser. If transaction is not authorized, the transaction MUST be rejected and an error returned to the client.
 
-- The [[ref: NYM]] transaction requires that the transaction to be written is signed by the DID controller using the existing `verkey` and, if a new `verkey` is being provided, the new `verkey`. The ledger MUST verify the signature(s). If the signature(s) cannot be validated, the transaction MUST be rejected and an error returned to the client.
+- The [[ref: NYM]] transaction requires that the transaction to be written is signed by the DID controller using the existing `verkey`. The ledger MUST verify the DID controller's signature. If the DID controller's signature cannot be validated, the transaction MUST be rejected and an error returned to the client.
 
 - The Indy ledger MUST check that the data in the [[ref: NYM]] produces valid JSON and MUST do a limited DIDDoc validation check prior to writing the [[ref: NYM]] object to the ledger. Details of the assembly and verification are [here](#diddoc-assembly-and-verification). If the DIDDoc validation fails, the transaction MUST be rejected and an error returned to the client.
 
