@@ -84,7 +84,7 @@ Existing Identifier: `5:5nDyJVP1NrcPAttP3xwMB9:4:5nDyJVP1NrcPAttP3xwMB9:3:CL:564
 
 #### ATTRIB
 
-DID URL: [`did:indy:sovrin:5nDyJVP1NrcPAttP3xwMB9/anoncreds/v1/ATTRIB/<raw>`](https://indyscan.io/tx/SOVRIN_MAINNET/domain/54743), where `<raw>` is the name of the JSON object that is the value of the `raw` [[ref: ATTRIB]] value. In the example linked at the start of this paragraph, the `<raw>` value would be `endpoint`.
+DID URL: [`did:indy:sovrin:5nDyJVP1NrcPAttP3xwMB9/ATTRIB/<raw>`](https://indyscan.io/tx/SOVRIN_MAINNET/domain/54743), where `<raw>` is the name of the JSON object that is the value of the `raw` [[ref: ATTRIB]] value. In the example linked at the start of this paragraph, the `<raw>` value would be `endpoint`.
 
 Response: Same as the Indy Node [GET_ATTRIB Txn](https://hyperledger-indy.readthedocs.io/projects/node/en/latest/requests.html#get-attrib). Only the `raw` parameter form of the transaction is supported.
 
