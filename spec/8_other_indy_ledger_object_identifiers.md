@@ -35,7 +35,7 @@ Existing identifier: `F72i3Y3Q4i466efjYJYCHM:2:npdb:4.3.4`
 
 - `2` is the enumerated object type
 - `npdb` is the client-defined schema name
-- `4.3.4` is the client-defined tag for the [[ref: SCHEMA]]
+- `4.3.4` is the client-defined version of the [[ref: SCHEMA]]
 
 #### Claim Def
 

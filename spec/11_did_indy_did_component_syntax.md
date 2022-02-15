@@ -8,7 +8,8 @@ The following sections provide the syntax and ABNF for the two variable componen
 The `did:indy` DID Namespace component MUST include a primary, human-friendly name of the Indy network instance, MAY include an optional ":" separator and subspace, human-friendly name, and MUST include a trailing ":" separator. The subspace name is used to identify an Indy instance related to the primary instance, such as the primary network's test or development instance. The ABNF for the namespace component is:
 
     namespace     = namestring (":" namestring) ":"
-    namestring    = ALPHA *(ALPHA / DIGIT / "_" / "-")
+    namestring    = lowercase *(lowercase / DIGIT / "_" / "-")
+    lowercase     = %x61-7A ; a-z
 
 The namespace is set by the operator of the network. Although that could lead to namespace collisions, our 
 [assumption about the expected number of Indy instances](#assumption-number-of-indy-instances) (low 100s at the most) eliminates that as a concern.
