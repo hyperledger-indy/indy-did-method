@@ -102,11 +102,8 @@ Existing Identifier: `5:5nDyJVP1NrcPAttP3xwMB9:4:5nDyJVP1NrcPAttP3xwMB9:3:CL:564
 
 #### ATTRIB
 
-DID URL: [`did:indy:sovrin:5nDyJVP1NrcPAttP3xwMB9/ATTRIB/<raw>`](https://indyscan.io/tx/SOVRIN_MAINNET/domain/54743), where `<raw>` is the name of the JSON object that is the value of the `raw` [[ref: ATTRIB]] value. In the example linked at the start of this paragraph, the `<raw>` value would be `endpoint`.
-
-Response: Same as the Indy Node [GET_ATTRIB Txn](https://hyperledger-indy.readthedocs.io/projects/node/en/latest/requests.html#get-attrib). Only the `raw` parameter form of the transaction is supported.
-
-Existing Identifier: `F72i3Y3Q4i466efjYJYCHM:1:b6bf...d9e`
-
-- `1` is the enumerated object type
-- `b6bf...d9e` is an identifier for the [[ref: ATTRIB]], likely a hash of the content
+No DID URL representation is defined for the Hyperledger Indy [[ref: ATTRIB]] object, as
+the use of the ATTRIB object is **deprecated** with the introduction of the
+`did:indy` DID Method. Where an ATTRIB might have been used in the past, an Indy
+client updated for `did:indy` should put the required data directly into the
+`diddocContent` item in a DID (NYM) update transaction.

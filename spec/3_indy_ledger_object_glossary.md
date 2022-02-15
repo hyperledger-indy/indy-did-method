@@ -15,13 +15,19 @@ Instances of Hyperledger Indy networks persist different kind of (internal) data
 finalize
 :::
 
-[[def: ATTRIB]]
+[[def: ATTRIB]] - **Deprecated**
 
-~ A Hyperledger Indy ATTRIB (short for "attribute") object extends a specific DID (respectively the [[ref: NYM]]) of its owner with further information (attributes) and can be [read](https://hyperledger-indy.readthedocs.io/projects/node/en/latest/requests.html#get-attrib) from a Hyperledger Indy Node by any client. An ATTRIB object can only be [written](https://hyperledger-indy.readthedocs.io/projects/node/en/latest/requests.html#attrib) to a Hyperledger Indy network by an owner of the DID on that network.
+~ A Hyperledger Indy ATTRIB (short for "attribute") object extends a specific DID (also known as [[ref: NYM]]) of its owner with further information (attributes) and can be [read](https://hyperledger-indy.readthedocs.io/projects/node/en/latest/requests.html#get-attrib) from a Hyperledger Indy Node by any client. An ATTRIB object can only be [written](https://hyperledger-indy.readthedocs.io/projects/node/en/latest/requests.html#attrib) to a Hyperledger Indy network by an owner of the DID on that network.
 
-::: todo finalize ATTRIB glossary entry
-finalize
-:::
+~ The use of ATTRIB is **deprecated** with the introduction of the `did:indy`
+DID Method. The only common use of ATTRIBs in Hyperledger Indy prior to
+`did:indy` was to define DIDDoc service endpoints for a DID. Since with
+`did:indy` such a service endpoint can be added directly to the DID (along with
+any other DIDDoc data) there is no need to continue the use of the older ATTRIB
+`endpoint` convention. While a Hyperledger Indy client (such as [[ref: Indy
+VDR]]) MAY continue to try to resolve an `endpoint` ATTRIB when there is no
+DIDDoc content in a resolved DID, the ongoing practice of using an ATTRIB for
+that or any other purpose is discouraged.
 
 [[def: SCHEMA]]
 
@@ -59,3 +65,8 @@ finalize
 ~ Any REV_REG_ENTRY condensed with further required information can be [read](https://hyperledger-indy.readthedocs.io/projects/node/en/latest/requests.html#get-revoc-reg-delta) by any Hyperledger Indy client.
 
 ~ Further details about Hyperledger Indy's revocation process can be found [here](https://hyperledger-indy.readthedocs.io/projects/hipe/en/latest/text/0011-cred-revocation/README.html).
+
+[[def: Indy VDR]]
+
+~ Hyperledger Indy VDR (for "Verifiable Data Registry") is an open source implementation of an Indy client/resolver for both DIDs and other Indy objects.
+The repository is called indy-vdr and can be found [here](https://github.com/hyperledger/indy-vdr).
