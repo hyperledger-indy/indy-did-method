@@ -43,7 +43,7 @@ The following are the steps for assembling a DIDDoc from its inputs.
 2. The Indy network instance `namespace`, the [[ref: NYM]] `dest` and the [[ref: NYM]] `verkey` items are merged into a text template to produce a base DIDDoc.
     1. See the template in the [Base DIDDoc Template](#base-diddoc-template) section of this document.
     2. If there is no `diddocContent` item in the [[ref: NYM]], assembly is complete; return the DIDDoc and a success status.
-       1. For backwards compatibility to the `did:sov` DID Method, if there is no `diddocContent` iten, a client DID resolver **MAY** attempt to read the `endpoint` ATTRIB object related to the DID and add it to the DIDDoc. See the [Endpoint ATTRIB section (below)](#the-%22endpoint%22-attrib) for more details.
+       1. For backwards compatibility to the `did:sov` DID Method, if there is no `diddocContent` item, a client DID resolver **MAY** attempt to read the `endpoint` ATTRIB object related to the DID and add it to the DIDDoc. See the [Endpoint ATTRIB section (below)](#the-%22endpoint%22-attrib) for more details.
 3. If the `diddocContent` item is included in the [[ref: NYM]] is verified and merged into the DIDDoc.
     1. The `diddocContent` item MUST NOT have an `id` item. If found, exit the assembly process, returning an error.
     2. If the `diddocContent` item contains a `@context` item, the DIDDoc is assumed to be JSON-LD, and the `@context` element MUST include the current DID Core JSON-LD context. If it does not, exit the assmebly process and return an error.
