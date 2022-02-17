@@ -55,7 +55,7 @@ DID URL: [`did:indy:sovrin:5nDyJVP1NrcPAttP3xwMB9/anoncreds/v0/CLAIM_DEF/56495/n
 - Object Family: `anoncreds`
 - Family Version: `v0`
 - Schema ID, example `56495`: A unique identifier for the schema upon which the ClaimDef is defined. In v0, the value is also the Hyperledger Indy instance sequence number for the Schema object used by this Claim Def.
-  In later versions, we expect that the schema identifier will either be removed from the RevReg DID URL, or take a different form.
+  In later versions, we expect that the schema identifier will either be removed from the ClaimDef DID URL, or take a different form.
 - Name, example `npdb`: The client-defined claim def name.
 
 Response: Same as the Indy Node [GET_CLAIM_DEF Txn](https://hyperledger-indy.readthedocs.io/projects/node/en/latest/requests.html#get-claim-def)
