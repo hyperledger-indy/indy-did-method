@@ -1,7 +1,7 @@
 Indy DID Method
 ==================
 
-**Specification Status:** Strawman
+**Specification Status:** Version 1.0 (Draft)
 
 **Latest Draft:**
 
