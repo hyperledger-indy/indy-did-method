@@ -12,6 +12,11 @@ Indy DID Method
 - [Stephen Curran](https://github.com/swcurran)
 - [Paul Bastian](https://github.com/paulbastian)
 - [Daniel Hardman](https://github.com/dhh1128)
+- [Char Howland](https://github.com/cjhowland)
+- [Christian Bormann](https://github.com/c2bo)
+- [Dominic Wörner](https://github.com/domwoe)
+- [Daniel Bluhm](https://github.com/dbluhm)
+- [Kyle Den Hartog](https://github.com/kdenhartog)
 
 <!-- -->
 
