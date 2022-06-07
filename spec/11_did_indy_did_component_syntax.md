@@ -1,4 +1,3 @@
-
 ## `did:indy` DID Component Syntax
 
 The following sections provide the syntax and ABNF for the two variable components of a `did:indy` DID, the namespace and namespace identifier.

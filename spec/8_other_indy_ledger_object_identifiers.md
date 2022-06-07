@@ -120,8 +120,6 @@ Existing Identifier: `5:5nDyJVP1NrcPAttP3xwMB9:4:5nDyJVP1NrcPAttP3xwMB9:3:CL:564
 - `5` is the enumerated object type
 - The remainder of the identifier is the identifier for the applicable Revocation Registry
 
-
-
 #### ATTRIB
 
 No DID URL representation is defined for the Hyperledger Indy [[ref: ATTRIB]] object, as

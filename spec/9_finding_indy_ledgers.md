@@ -38,7 +38,7 @@ The security policy of the client (and perhaps the user of the client) might giv
 
 Each contributing network instance operator maintains copies of their genesis files and supporting documents in the GitHub repo by submitting Pull Requests (PRs) to the repo. The community selected repo maintainers are expected to merge PRs with limited review based on their knowledge of the network operators. Their focus is not to provide editorial oversight but only to:
 
-- prevent updates to a network's gensis file by other than known operator of the network, and
+- prevent updates to a network's genesis file by other than known operator of the network, and
 - prevent badly formatted genesis files from being added to the repository.
 
 The maintainers are authorized to submit PRs to remove "bad actor" network folders based on notifications from the community and followup verification.
