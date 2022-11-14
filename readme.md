@@ -40,5 +40,5 @@ An alternative way to contribute to the specification, without any local install
 ## Community Links
 
 - [Meeting Agendas and Notes](https://wiki.hyperledger.org/display/indy/Indy+DID+Method+Specification)
-- [Hyperledger Rocketchat #indy-did-method](https://chat.hyperledger.org/channel/indy-did-method)
+- [Hyperledger Discord](https://discord.gg/hyperledger)
   
