@@ -18,6 +18,8 @@ Once the validation checks are completed, the [[ref: NYM]] transaction is writte
 
 On successfully writing the transaction to the Indy distributed ledger a success status is returned to the client.
 
+Even though the `diddocContent` should generally be written to a [[ref: NYM]] transaction as described above, there may be networks which use a version of Hyperledger Indy that doesn't support this field yet. In this case, implementations MAY write the `diddocContent` to an [[ref: ATTRIB]] transaction instead.
+
 #### NYM Transaction Version
 
 The NYM transaction `version` specifies the required level of validation of the relationship between the namespace identifier component of the DID and the initial public key (verkey). This field is optional, but if the NYM transaction `version` is provided, it must be set upon creation and cannot be updated. The accepted values are as follows:
@@ -65,6 +67,8 @@ The following are the steps for assembling a DIDDoc from its inputs.
 4. The resulting DIDDoc text must be valid JSON. If not JSON, exit and return an error.
 5. The resulting JSON must be a valid DIDDoc. Perform the [DIDDoc Validation](#diddoc-validation) process. If not a DIDDoc, exit and return an error.
 6. Return the DIDDoc and a success status.
+
+Even though the `diddocContent` should generally be retrieved from a [[ref: NYM]] transaction as described above, there may be networks which use a version of Hyperledger Indy that doesn't support this field yet. In this case, implementations MAY modify the above algorithm to retrieve the `diddocContent` from an [[ref: ATTRIB]] transaction instead.
 
 The remainder of this section goes through examples of base DIDDoc template (step 2, above) that is created prior to processing the optional `diddocContent` item, and an example of processing a `diddocContent` item.
 
