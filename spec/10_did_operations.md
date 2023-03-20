@@ -18,8 +18,6 @@ Once the validation checks are completed, the [[ref: NYM]] transaction is writte
 
 On successfully writing the transaction to the Indy distributed ledger a success status is returned to the client.
 
-Even though the `diddocContent` should generally be written to a [[ref: NYM]] transaction as described above, there may be networks which use a version of Hyperledger Indy that doesn't support this field yet. In this case, implementations MAY write the `diddocContent` to an [[ref: ATTRIB]] transaction instead.
-
 #### NYM Transaction Version
 
 The NYM transaction `version` specifies the required level of validation of the relationship between the namespace identifier component of the DID and the initial public key (verkey). This field is optional, but if the NYM transaction `version` is provided, it must be set upon creation and cannot be updated. The accepted values are as follows:
@@ -67,8 +65,6 @@ The following are the steps for assembling a DIDDoc from its inputs.
 4. The resulting DIDDoc text must be valid JSON. If not JSON, exit and return an error.
 5. The resulting JSON must be a valid DIDDoc. Perform the [DIDDoc Validation](#diddoc-validation) process. If not a DIDDoc, exit and return an error.
 6. Return the DIDDoc and a success status.
-
-Even though the `diddocContent` should generally be retrieved from a [[ref: NYM]] transaction as described above, there may be networks which use a version of Hyperledger Indy that doesn't support this field yet. In this case, implementations MAY modify the above algorithm to retrieve the `diddocContent` from an [[ref: ATTRIB]] transaction instead.
 
 The remainder of this section goes through examples of base DIDDoc template (step 2, above) that is created prior to processing the optional `diddocContent` item, and an example of processing a `diddocContent` item.
 
@@ -202,6 +198,41 @@ If clients want to continue to retrieve and use the `endpoint` [[ref: ATTRIB]] t
 ```
 
 The DIDDoc produced by the [[ref: NYM]] and "endpoint" [[ref: ATTRIB]] would be created using the DIDDoc Assembly Rules and using the `diddocContent` from the [[ref: ATTRIB]] instead of the [[ref: NYM]] item.
+
+#### The "diddocContent" ATTRIB
+
+As described in previous sections, this DID Method introduces the optional `diddocContent` item in [[ref: NYM]] transactions, which is used in the [DIDDoc assembly process](#diddoc-assembly-and-verification).
+
+There may however be networks which use a version of Hyperledger Indy that doesn't support this field yet. In this case, when [creating](#creation) or [updating](#update) a `did:indy` DID, implementations MAY write the `diddocContent` to an [[ref: ATTRIB]] transaction with a `raw` value containing the JSON for a name-value pair with name `diddocContent`, instead of using the field in a [[ref: NYM]] transaction.
+
+Once such a network is upgraded to a version that supports the `diddocContent` item in the [[ref: NYM]], we strongly encourage anyone using the "ATTRIB `diddocContent`" convention to update their [[ref: NYM]] on the ledger to use the `diddocContent` item as soon as possible, analogous to the ["ATTRIB `endpoint`" convention](#the-endpoint-attrib).
+
+If a client retrieves a [[ref: NYM]] that has a `diddocContent` data element, the client should assume that the DID Controller has made the [[ref: ATTRIB]] (if any) obsolete and the client SHOULD NOT retrieve the [[ref: ATTRIB]] associated with the DID.
+
+Otherwise, the client SHOULD attempt to retrieve the `diddocContent` [[ref: ATTRIB]] transaction associated with a [[ref: NYM]] and, if present, treat it as if its `raw` value was the value of the `diddocContent` item in the [[ref: NYM]].
+
+The following is an example `raw` value of an "ATTRIB `diddocContent`":
+
+::: example Example `raw` value of an "ATTRIB `diddocContent`"
+```json
+{
+	"diddocContent": {
+		"@context": [
+			"https://www.w3.org/ns/did/v1",
+			"https://identity.foundation/didcomm-messaging/service-endpoint/v1"
+		],
+		"service": [{
+			"id": "did:indy:sovrin:123456#did-communication",
+			"type": "did-communication",
+			"priority": 0,
+			"serviceEndpoint": "https://example.com",
+			"recipientKeys": ["#verkey"],
+			"routingKeys": []
+		}]
+	}
+}
+```
+:::
 
 ### Update
 
