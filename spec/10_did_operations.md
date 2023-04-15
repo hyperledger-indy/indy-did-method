@@ -211,24 +211,29 @@ If a client retrieves a [[ref: NYM]] that has a `diddocContent` data element, th
 
 Otherwise, the client SHOULD attempt to retrieve the `diddocContent` [[ref: ATTRIB]] transaction associated with a [[ref: NYM]] and, if present, treat it as if its `raw` value was the value of the `diddocContent` item in the [[ref: NYM]].
 
-The following is an example `raw` value of an "ATTRIB `diddocContent`":
+The following is an example ATTRIB transaction with a `raw` value containing `diddocContent`:
 
-::: example Example `raw` value of an "ATTRIB `diddocContent`"
+::: example Example ATTRIB transaction with a `raw` value containing `diddocContent`
 ```json
 {
-	"diddocContent": {
-		"@context": [
-			"https://www.w3.org/ns/did/v1",
-			"https://identity.foundation/didcomm-messaging/service-endpoint/v1"
-		],
-		"service": [{
-			"id": "did:indy:sovrin:123456#did-communication",
-			"type": "did-communication",
-			"priority": 0,
-			"serviceEndpoint": "https://example.com",
-			"recipientKeys": ["#verkey"],
-			"routingKeys": []
-		}]
+	"txn": {
+		"data": {
+			"dest": "P8xKoMHo5tvaCBu9sg7qmE",
+			"raw": "{\"diddocContent\":{\"@context\":[\"https://www.w3.org/ns/did/v1\",\"https://identity.foundation/didcomm-messaging/service-endpoint/v1\"],\"service\":[{\"id\":\"did:indy:sovrin:123456#did-communication\",\"type\":\"did-communication\",\"priority\":0,\"serviceEndpoint\":\"https://example.com\",\"recipientKeys\":[\"#verkey\"],\"routingKeys\":[]}]}}"
+		},
+		"metadata": {
+			"reqId": 1681588180411147000,
+			"from": "P8xKoMHo5tvaCBu9sg7qmE",
+			"digest": "38f422258c5f674f60e08274cf400a351dabfb3f5c80b59966f2889947bf3387",
+			"payloadDigest": "0aa1a7d1de92da1056c7702dee10fba0cc7d13378f6cd11ec392da2d95c3e2fb"
+		},
+		"protocolVersion": 2,
+		"type": "100"
+	},
+	"txnMetadata": {
+		"seqNo": 807,
+		"txnId": "P8xKoMHo5tvaCBu9sg7qmE:1:9bc57c8357576385437819bd163d4cd6dda6acb9a424033d50a646bc54438ef3",
+		"txnTime": 1681588183
 	}
 }
 ```
