@@ -30,7 +30,7 @@ jobs:
       run: git add -f docs/index.html
 
     - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4.6.8
+      uses: JamesIves/github-pages-deploy-action@v4.7.1
       with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages # The branch the action should deploy to.
