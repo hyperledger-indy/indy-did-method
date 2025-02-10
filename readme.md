@@ -1,6 +1,15 @@
 # Indy DID Method
 
+## Open in Gitpod
+
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/hyperledger/indy-did-method)
+
+## Open in codespaces 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/hyperledger/indy-did-method)
+
+## Open in Codeanywhere
+
+ [![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/hyperledger/indy-did-method)
 
 This repository contains the source for the Indy DID Method specification. The initital content was transferred from a [collaborative HackMD document](https://hackmd.io/2IKUPROnRXW57Lmal_SGaQ).
 
