@@ -16,12 +16,13 @@
         "7_indy_did_method_identifiers.md",
         "8_other_indy_ledger_object_identifiers.md",
         "9_finding_indy_ledgers.md",
-        "10_did_operations.md",
-        "11_did_indy_did_component_syntax.md",
-        "12_json_or_json-ld.md",
-        "13_security_considerations.md",
+        "10_original_did_operations.md",
+        "11_besu_did_operations.md",
+        "12_did_indy_did_component_syntax.md",
+        "13_json_or_json-ld.md",
         "14_privacy_considerations.md",
-        "15_future_directions.md"
+        "15_security_considerations.md",
+        "16_future_directions.md"
       ],
       "logo": "https://raw.githubusercontent.com/hyperledger/indy-did-method/main/hyperledger-logo.svg",
       "logo_link": "https://github.com/hyperledger/indy-did-method",
