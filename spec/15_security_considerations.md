@@ -76,7 +76,7 @@ Residual risks for Hyperledger Indy include:
 
 ### Integrity protection and update authentication for method operations and write authorization
 
-For all write operations that alter the ledger data(Create, Update, Deactivate) the appropriate signatures are needed, where the DIDs and Verification Method public keys (`verkey`s) of the signatories must be one the ledger. The client signs the body of the [write request](https://github.com/hyperledger/indy-node/blob/master/docs/source/requests.md#reply-structure-for-write-requests) (`txn`) for indy-node and [EIP1559 transactions](https://besu.hyperledger.org/23.4.0/public-networks/concepts/transactions/types#eip1559-transactions) for indy-besu, depending on the configured ledger rules, some transactions might require signatures from multiple DIDs. The Indy ledger processes the signed write request and the software enforces the integrity protection by checking the validity of the given signatures and their authorization. No authentication or authorization is required for read requests.
+For all write operations that alter the ledger data(Create, Update, Deactivate) the appropriate signatures are needed, where the DIDs and Verification Method public keys (`verkey`s) of the signatories must be one the ledger. The client signs the body of the [write request](https://github.com/hyperledger-indy/indy-node/blob/master/docs/source/requests.md#reply-structure-for-write-requests) (`txn`) for indy-node and [EIP1559 transactions](https://besu.hyperledger.org/23.4.0/public-networks/concepts/transactions/types#eip1559-transactions) for indy-besu, depending on the configured ledger rules, some transactions might require signatures from multiple DIDs. The Indy ledger processes the signed write request and the software enforces the integrity protection by checking the validity of the given signatures and their authorization. No authentication or authorization is required for read requests.
 
 As indy-node currently only provides a single `verkey` for authentication, this exposes a risk of loss of control if the  private key for the DID Controller is lost.
 
@@ -94,7 +94,7 @@ No endpoint authentication is used other than the trusted node keys from the gen
 
 ### Protection of data
 
-Transaction data on the ledger stored by the nodes is protected for integrity by maintaining cryptographically signed root hashes of the [merkle tree](https://github.com/hyperledger/indy-plenum/blob/master/docs/source/storage.md) for indy-plenum and [Ethereum merkle tree](https://ethereum.org/en/developers/docs/data-structures-and-encoding/patricia-merkle-trie/) for indy-besu, that includes all transactions of the ledger. Data is not protected for integrity as all data is inherently public anyway.
+Transaction data on the ledger stored by the nodes is protected for integrity by maintaining cryptographically signed root hashes of the [merkle tree](https://github.com/hyperledger-indy/indy-plenum/blob/master/docs/source/storage.md) for indy-plenum and [Ethereum merkle tree](https://ethereum.org/en/developers/docs/data-structures-and-encoding/patricia-merkle-trie/) for indy-besu, that includes all transactions of the ledger. Data is not protected for integrity as all data is inherently public anyway.
 
 ### Protection of Key Material
 
@@ -104,7 +104,7 @@ The ledger nodes are operating with the Validator BLS key, which is stored in so
 
 ### Peer-to-Peer Computing resources
 
-The RBFT algorithm in indy-plenum was initially designed as a robust Consensus protocol that limits the effect of malicious nodes. However, this requires some computations that limits the efficiency and scalability of the consensus. It ist strongly advised to not increase the number of validator nodes above 25. Hyperledger Indy was designed with very limited number of write requests, but very efficient read requests (only one node needs to be queried). If scalability issues still arise, the concept of [Observer nodes](https://github.com/hyperledger/indy-plenum/blob/master/design/observers.md) can be implemented.
+The RBFT algorithm in indy-plenum was initially designed as a robust Consensus protocol that limits the effect of malicious nodes. However, this requires some computations that limits the efficiency and scalability of the consensus. It ist strongly advised to not increase the number of validator nodes above 25. Hyperledger Indy was designed with very limited number of write requests, but very efficient read requests (only one node needs to be queried). If scalability issues still arise, the concept of [Observer nodes](https://github.com/hyperledger-indy/indy-plenum/blob/master/design/observers.md) can be implemented.
 
 For networking Hyperledger Indy Besu uses Hyperledger Besu. It implements Ethereum's devp2p network protocols for inter-client communication, along with an additional sub-protocol for IBFT2 consensus:
 - Discovery: A UDP-based protocol for finding peers on the network

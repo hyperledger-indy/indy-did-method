@@ -1,6 +1,6 @@
 ## did:indy:besu Operations
 
-There is a description of a storage format, types and operations that are available in case of using [`indy-besu`](https://github.com/hyperledger/indy-besu) repository.
+There is a description of a storage format, types and operations that are available in case of using [`indy-besu`](https://github.com/hyperledger-indy/indy-besu) repository.
 
 ### Storage format
 

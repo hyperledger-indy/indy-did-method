@@ -2,11 +2,11 @@
   "name": "indy-did-method",
   "description": "DID Indy DID Method Specification",
   "version": "0.1.0",
-  "homepage": "http://hyperledger.org",
+  "homepage": "https://www.lfdecentralizedtrust.org/",
   "license": "Apache 2",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hyperledger/indy-did-method"
+    "url": "git://github.com/hyperledger-indy/indy-did-method"
   },
   "dependencies": {
     "spec-up": "0.10.6"

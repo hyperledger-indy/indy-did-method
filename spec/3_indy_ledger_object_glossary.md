@@ -62,8 +62,8 @@ credential validation and can be [read](https://hyperledger-indy.readthedocs.io/
 [[def: Indy VDR]]
 
 ~ Hyperledger Indy VDR (for "Verifiable Data Registry") is an open source implementation of an Indy client/resolver for both DIDs and other Indy objects.
-The repository is called indy-vdr and can be found [here](https://github.com/hyperledger/indy-vdr).
+The repository is called indy-vdr and can be found [here](https://github.com/hyperledger-indy/indy-vdr).
 
 [[def: Indy Besu VDR]]
 
-~ Hyperledger Indy Besu VDR (for "Verifiable Data Registry") is an open source implementation of an Indy Besu client/resolver for both DIDs and other Indy objects. The repository is called indy-besu contains Indy Besu VDR [here](https://github.com/hyperledger/indy-besu/tree/main/vdr).
+~ Hyperledger Indy Besu VDR (for "Verifiable Data Registry") is an open source implementation of an Indy Besu client/resolver for both DIDs and other Indy objects. The repository is called indy-besu contains Indy Besu VDR [here](https://github.com/hyperledger-indy/indy-besu/tree/main/vdr).

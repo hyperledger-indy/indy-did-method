@@ -24,11 +24,11 @@
         "15_security_considerations.md",
         "16_future_directions.md"
       ],
-      "logo": "https://raw.githubusercontent.com/hyperledger/indy-did-method/main/hyperledger-logo.svg",
-      "logo_link": "https://github.com/hyperledger/indy-did-method",
+      "logo": "https://raw.githubusercontent.com/hyperledger-indy/indy-did-method/main/hyperledger-logo.svg",
+      "logo_link": "https://github.com/hyperledger-indy/indy-did-method",
       "source": {
         "host": "github",
-        "account": "hyperledger",
+        "account": "hyperledger-indy",
         "repo": "indy-did-method"
       }
     }

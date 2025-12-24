@@ -5,7 +5,7 @@ Indy DID Method
 
 **Latest Draft:**
 
-  [https://github.com/hyperledger/indy-did-method](https://github.com/hyperledger/indy-did-method)
+  [https://github.com/hyperledger-indy/indy-did-method](https://github.com/hyperledger-indy/indy-did-method)
 
 **Editors:**
 
@@ -25,7 +25,7 @@ Indy DID Method
 
 **Participate:**
 
-~ [GitHub repo](https://github.com/hyperledger/indy-did-method)
-~ [Commit history](https://github.com/hyperledger/indy-did-method/commits/main)
+~ [GitHub repo](https://github.com/hyperledger-indy/indy-did-method)
+~ [Commit history](https://github.com/hyperledger-indy/indy-did-method/commits/main)
 
 ------------------------------------

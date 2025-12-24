@@ -32,7 +32,7 @@ The following sections cover each ledger object type, providing:
 - notes about the elements of the pre-`did:indy` identifier.
 
 This first version of the `did:indy` DID Method will use an `<object-family>` value of `anoncreds` and an `<object-family-version>` of `v0` to match the
-pre-specification, open source version of anoncreds as implemented in the [indy-sdk](https://github.com/hyperledger/indy-sdk/tree/master/docs/design/002-anoncreds).
+pre-specification, open source version of anoncreds as implemented in the [indy-sdk](https://github.com/hyperledger-indy/indy-sdk/tree/master/docs/design/002-anoncreds).
 Later versions of the `did:indy` specification will use a higher `<object-family-version>` as the AnonCreds standardization work proceeds
 and the required dependency on Hyperledger Indy is removed. In this initial version, the DID URLs are closely aligned with the existing object identifiers.
 

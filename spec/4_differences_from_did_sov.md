@@ -30,7 +30,7 @@ The idea is using of a basic mapping between other DIDs identifiers and Ethereum
 
 ### Migration from `did:indy` to `did:indy:besu`
 
-At some point company managing (Issuer,Holder,Verifier) decide to migrate from [Indy Node](https://github.com/hyperledger/indy-node) to [Indy Besu Ledger](https://github.com/hyperledger/indy-besu).
+At some point company managing (Issuer,Holder,Verifier) decide to migrate from [Indy Node](https://github.com/hyperledger-indy/indy-node) to [Indy Besu Ledger](https://github.com/hyperledger-indy/indy-besu).
 
 In order to do that, their Issuer's applications need to publish their data to Indy Besu Ledger.
 Issuer need to run migration tool manually (on the machine containing Indy Wallet storing Credential Definitions) which migrate data.
