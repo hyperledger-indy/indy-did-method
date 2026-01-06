@@ -1,0 +1,36 @@
+
+{
+  "specs": [
+    {
+      "title": "Indy DID Method Specification",
+      "spec_directory": "./spec",
+      "output_path": "./docs",
+      "markdown_paths": [
+        "0_header.md",
+        "1_about.md",
+        "2_abstract.md",
+        "3_indy_ledger_object_glossary.md",
+        "4_differences_from_did_sov.md",
+        "5_target_systems.md",
+        "6_motivation_and_assumptions.md",
+        "7_indy_did_method_identifiers.md",
+        "8_other_indy_ledger_object_identifiers.md",
+        "9_finding_indy_ledgers.md",
+        "10_original_did_operations.md",
+        "11_besu_did_operations.md",
+        "12_did_indy_did_component_syntax.md",
+        "13_json_or_json-ld.md",
+        "14_privacy_considerations.md",
+        "15_security_considerations.md",
+        "16_future_directions.md"
+      ],
+      "logo": "https://raw.githubusercontent.com/hyperledger-indy/indy-did-method/main/hyperledger-logo.svg",
+      "logo_link": "https://github.com/hyperledger-indy/indy-did-method",
+      "source": {
+        "host": "github",
+        "account": "hyperledger-indy",
+        "repo": "indy-did-method"
+      }
+    }
+  ]
+}
